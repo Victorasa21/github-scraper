@@ -4,6 +4,8 @@ const { scrapperController } = require('./controller/scrapper.controller')
 
 app.post('/', scrapperController);
 
-app.listen(3000, () => {
-    console.log('Rodando na porta 3000')
+var port_number = server.listen(process.env.PORT || 3333);
+
+app.listen(port_number, () => {
+    console.log(`Rodando na porta ${port_number}`)
 })
