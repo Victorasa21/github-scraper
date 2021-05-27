@@ -19,6 +19,7 @@ $ npm run dev
 ```javascript
 # Body example to scrape github repository file calculation
 {
-	"gitRepository": "https://github.com/Victorasa21/github-scraper"
+	"gitRepository": "https://github.com/Victorasa21/github-scraper", //required
+	"extensionsToIgnore":["gitignore","md","lock","editorconfig"] //optional
 }
 ```

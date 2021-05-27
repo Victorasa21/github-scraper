@@ -1,5 +1,5 @@
 const transformInUrl = (aTag) => {
-    let urlResource = aTag.split('=')[4].split('>')[0];
+    let urlResource = aTag.split('href=')[1].split('>')[0];
     return `https://github.com/${urlResource}`
 }
 

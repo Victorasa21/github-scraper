@@ -34,7 +34,7 @@ const getFileInfo = async (folder) => {
     return filesFormat;
 }
 
-const scrapperService = async (folder) => {
+const scrapperService = async (folder, extensionsToIgnore = []) => {
 
     let result = await getFileInfo(folder);
 
@@ -50,7 +50,7 @@ const scrapperService = async (folder) => {
         }
 
         return [...acc, { ...file, count: 1 }];
-    }, []);
+    }, []).filter(file => !extensionsToIgnore.includes(file.extension));
 }
 
 module.exports = scrapperService;
