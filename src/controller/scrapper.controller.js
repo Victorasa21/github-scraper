@@ -9,7 +9,8 @@ const scrapperController = async (req, res) => {
     try {
         const htmlBody = await scrapperService(gitRepository);
         return res.status(200).json({
-            status: htmlBody
+            status: 'success',
+            data: htmlBody
         })
     } catch (error) {
         console.log(error)
