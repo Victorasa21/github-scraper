@@ -1,4 +1,3 @@
-
 const clearResponseString = (string) => string.replace(/(\r\n|\n|\r|\")/gm, "");
 
 const regexFileandFolder = async (string) => {

@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
-const { scrapperController } = require('./controller/scrapper.controller')
+const { scrapperController } = require('./controller/scrapper.controller');
+
+app.use(express.json());
 
 app.post('/', scrapperController);
 

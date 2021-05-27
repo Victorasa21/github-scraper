@@ -1,4 +1,4 @@
-const { transformInUrl } = require('./files.util')
+const { transformInUrl } = require('./urlTransformation.utils')
 
 const separateFolderAndFile = (array) => {
     let arrayFolder = [];
@@ -7,7 +7,6 @@ const separateFolderAndFile = (array) => {
         item.includes('tree') ? arrayFolder.push(transformInUrl(item)) : arrayFile.push(transformInUrl(item))
     })
 
-    //se é folder 
     return {
         arrayFolder,
         arrayFile,
