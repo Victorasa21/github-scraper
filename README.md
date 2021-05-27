@@ -19,6 +19,6 @@ $ npm run dev
 ```javascript
 # Body example to scrape github repository file calculation
 {
-	"gitRepository": "https://github.com/githubdojone/cashback-system"
+	"gitRepository": "https://github.com/Victorasa21/github-scraper"
 }
 ```
